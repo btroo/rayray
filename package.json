@@ -1,0 +1,29 @@
+{
+  "name": "rayray",
+  "version": "0.0.1",
+  "description": "Shoots towards the real meaning in text",
+  "main": "index.js",
+  "dependencies": {
+    "html-to-text": "^0.1.0",
+    "natural": "^0.1.27",
+    "pos": "^0.1.6",
+    "sentiment": "^1.0.1",
+    "text-parse": "^1.1.0",
+    "underscore-node": "^0.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "nlp",
+    "parsing",
+    "vocabulary",
+    "text",
+    "meaning",
+    "relationship extraction",
+    "topic recognition"
+  ],
+  "author": "Brandon Truong",
+  "license": "MIT"
+}
