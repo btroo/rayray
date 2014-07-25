@@ -1,7 +1,7 @@
 {
   "name": "rayray",
   "version": "0.0.1",
-  "description": "Shoots towards the real meaning in text",
+  "description": "Some NLP utilites. Helps you find some meaning in text.",
   "main": "index.js",
   "dependencies": {
     "html-to-text": "^0.1.0",

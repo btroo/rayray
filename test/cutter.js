@@ -3,10 +3,18 @@ var assert = require('assert'),
 
 describe('Cutter', function(){
 
-	describe('#words', function(){
 
-		it("parses words correctly", function(done){
-			expect('a').to.equal('a');
+	describe('#words', function(){
+		var cutter, passage;
+
+		beforeEach(function(done){
+			cutter = Cutter();
+			passage = "I am a sentence. I am a group of words."
+		});
+
+		it("should parse words correctly", function(done){
+			var vocab = cutter.getAllVocab(passage);
+			expect()
 			done();
 		});
 
@@ -14,11 +22,9 @@ describe('Cutter', function(){
 			expect('a').to.equal('a');
 			done();
 		});
+	});
 
-		it("parses paragraphs correctly", function(done){
-			expect('a').to.equal('a');
-			done();
-		});
+	describe("#paragraphs", function(){
 
 	});
 
