@@ -1,31 +1,33 @@
 var assert = require('assert'),
-	expect = require('chai').expect;
+	_ = require('underscore-node'),
+	expect = require('chai').expect,
+	cutter = require('../index').Cutter;
 
 describe('Cutter', function(){
-
-
 	describe('#words', function(){
-		var cutter, passage;
-
 		beforeEach(function(done){
-			cutter = Cutter();
-			passage = "I am a sentence. I am a group of words."
+			passage = "I am a sentence. I am a group of words.\nI started a new paragraph";
+			done();
 		});
 
 		it("should parse words correctly", function(done){
 			var vocab = cutter.getAllVocab(passage);
-			expect()
+			expect(vocab.length).to.equal(10);
 			done();
 		});
 
 		it("parses words and count correctly", function(done){
-			expect('a').to.equal('a');
+			var vocab = cutter.getAllVocabAndCount(passage);
+			expect(_.findWhere(vocab, {word: "a"}).count).to.equal(3);
 			done();
 		});
 	});
 
 	describe("#paragraphs", function(){
-
+	
 	});
 
+	describe("#sentences", function(){
+
+	});
 });
