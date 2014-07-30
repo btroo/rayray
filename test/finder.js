@@ -4,6 +4,8 @@ var assert = require('assert'),
 	finder = require('../index').Finder;
 
 describe('Cutter', function(){
+	var passage;
+
 	beforeEach(function(done){
 		passage = "I am a sentence. I am a group of words.\nI started a new paragraph";
 		done();
@@ -16,11 +18,19 @@ describe('Cutter', function(){
 			done();
 		});
 
-		it("parses words and count correctly", function(done){
+		it("should parse words and count correctly", function(done){
 			var vocab = finder.getVocabAndCount(passage);
 			expect(_.findWhere(vocab, {word: "a"}).count).to.equal(3);
 			done();
 		});
+
+		it("should get all vocab with over one occurrence", function(done){
+			var vocab = finder.findOverOne(finder.getVocabAndCount(passage));
+			expect(vocab.length).to.equal(3);
+			done();
+		});
+
+		
 	});
 
 	describe("#sentences", function(){
