@@ -4,7 +4,6 @@ NLP tools to help you parse words, find counts, and find keywords. More function
 
 README will be updated soon.
 
-# How to use
 ## Installation
 ```
 npm install rayray
