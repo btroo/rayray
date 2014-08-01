@@ -3,6 +3,10 @@
   "version": "0.0.3",
   "description": "Some NLP utilites. Helps you find some meaning in text.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/btroo/rayray"
+  },
   "dependencies": {
     "html-to-text": "^0.1.0",
     "natural": "^0.1.27",
