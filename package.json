@@ -1,6 +1,6 @@
 {
   "name": "rayray",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Some NLP utilites. Helps you find some meaning in text.",
   "main": "index.js",
   "dependencies": {
