@@ -9,54 +9,34 @@ README will be updated soon.
 npm install rayray
 ```
 
-## Cutter
-Usage:
-```
-var cutter = require('rayray').Cutter;
-
-cutter.getAllVocab("I am a sentence."); // returns all vocabulary in the sentence
-```
-#### cutter.getAllDifferentTokens(input)
-
-#### cutter.getAllDifferentTokensAndCount(input)
-
-#### cutter.getAllVocab(input)
-
-#### cutter.getAllVocabAndCount(input)
-
-#### cutter.getParagraphs(input)
-
-#### cutter.getSentences(input)
-
 ## Finder
 Usage:
 ```
-var finder = require('rayray').Finder;
+var finder = require('rayray').finder;
 
-finder.findMostOccurred("This is a cool sentence. cool cool cool.", 1); // find #1 most occurred word 
+finder.getAllVocab("I am a sentence."); // returns all vocabulary in the sentence
 ```
-
+#### finder.getAllDifferentTokens(input)
+*input* - text you want to parse
+Returns array of all different tokens
+#### finder.getAllDifferentTokensAndCount(input)
+*input* - text you want to parse
+Returns array of objects of all different tokens with count 
+#### finder.getAllVocab(input)
+*input* - text you want to parse
+Returns array of all different words
+#### finder.getAllVocabAndCount(input)
+*input* - text you want to parse
+Returns array of all different words and count
+#### finder.getSentences(input)
+*input* - text you want to parse
+Returns array of all sentences
+#### finder.getParagraphs(input)
+*input* - text you want to parse
+Returns array of all paragraphs
 #### findMostOccurred(input, count)
-
-## Getter
-Usage:
-```
-var getter = require('rayray').Getter;
-
-getter.get('http://www.brandontruong.com', function(data){
-  console.log(data); // logs html of page
-}); 
-```
-
-#### getter.get(url, callback)
-
-#### getter.getText(url, callback)
-
-#### getter.getURLForType(type, searchString)
-
-#### getter.getSearchForType(type, searchString, callback)
-
-#### getter.getTextSearch(type, callback)
-
+*input* - array of objects from an 'AndCount' method above
+*count* - how far you want your list to be
+Returns array of top counted items
 # Contributing:
 Rayray is in early stages. Open to any new features or feature requests. 
