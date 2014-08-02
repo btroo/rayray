@@ -17,33 +17,33 @@ var finder = require('rayray').finder;
 finder.getAllVocab("I am a sentence."); // returns all vocabulary in the sentence
 ```
 #### finder.getAllDifferentTokens(input)
-*input* - text you want to parse
+* *input* - text you want to parse
 
 Returns array of all different tokens
 #### finder.getAllDifferentTokensAndCount(input)
-*input* - text you want to parse
+* *input* - text you want to parse
 
 Returns array of objects of all different tokens with count 
 #### finder.getAllVocab(input)
-*input* - text you want to parse
+* *input* - text you want to parse
 
 Returns array of all different words
 #### finder.getAllVocabAndCount(input)
-*input* - text you want to parse
+* *input* - text you want to parse
 
 Returns array of all different words and count
 #### finder.getSentences(input)
-*input* - text you want to parse
+* *input* - text you want to parse
 
 Returns array of all sentences
 #### finder.getParagraphs(input)
-*input* - text you want to parse
+* *input* - text you want to parse
 
 Returns array of all paragraphs
 #### findMostOccurred(input, count)
-*input* - array of objects from an 'AndCount' method above
+* *input* - array of objects from an 'AndCount' method above
 
-*count* - how far you want your list to be
+* *count* - how far you want your list to be
 
 Returns array of top counted items
 # Contributing:
